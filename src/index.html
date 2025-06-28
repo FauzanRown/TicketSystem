@@ -8,7 +8,7 @@
   </head>
   <body class="bg-gray-100 min-h-screen">
     <aside
-      class="w-[315px] bg-white shadow-xl h-screen fixed top-0 left-0 z-50"
+      class="w-[315px] bg-white shadow-xl h-screen fixed top-0 left-0 z-50 overflow-y-auto"
     >
       <div class="flex items-center space-x-4 mt-9 justify-center">
         <img src="../assets/img/global/logo.svg" alt="Logo" class="w-12 h-12" />
@@ -94,6 +94,89 @@
           </svg>
           <span>Pendapatan</span>
         </a>
+      </div>
+
+      <div class="mt-8 px-6">
+        <h2 class="text-lg text-cyan-950 font-bold">Pembelian</h2>
+      </div>
+
+      <div class="mt-6 space-y-5 px-6">
+        <a
+          href="#"
+          class="flex items-center text-gray-900 hover:text-blue-600 transition"
+        >
+          <!-- Icon: Overview -->
+          <svg
+            class="w-5 h-5 mr-3 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 3h7v7H3V3zm11 0h7v7h-7V3zM3 14h7v7H3v-7zm11 0h7v7h-7v-7z"
+            />
+          </svg>
+          <span>Beli Tiket</span>
+        </a>
+
+        <a
+          href="#"
+          class="flex items-center text-gray-900 hover:text-blue-600 transition"
+        >
+          <!-- Icon: Ticket -->
+          <svg
+            class="w-5 h-5 mr-3 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M4 4h16v16H4V4zm4 4h8v8H8V8z" />
+          </svg>
+          <span>Lihat Tiket Tersedia</span>
+        </a>
+
+        <a
+          href="#"
+          class="flex items-center text-gray-900 hover:text-blue-600 transition"
+        >
+          <!-- Icon: User -->
+          <svg
+            class="w-5 h-5 mr-3 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 20h14M12 14a5 5 0 100-10 5 5 0 000 10z" />
+          </svg>
+          <span>Data Pembeli</span>
+        </a>
+
+        <a
+          href="#"
+          class="flex items-center text-gray-900 hover:text-blue-600 transition"
+        >
+          <!-- Icon: Money -->
+          <svg
+            class="w-5 h-5 mr-3 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 8c-3 0-5 1-5 4s2 4 5 4 5-1 5-4-2-4-5-4zm0 12V4" />
+          </svg>
+          <span>Pendapatan</span>
+        </a>
+
+        <div
+          class="flex items-center justify-center gap-2 mt-8 px-2 py-2 mb-7 hover:bg-indigo-900 bg-indigo-700 rounded-lg text-xl font-semibold text-white"
+        >
+          <img src="../assets/img/global/log-out.svg" alt="" />
+          <button>Logout</button>
+        </div>
       </div>
     </aside>
 
