@@ -1,4 +1,5 @@
 const tabel = document.getElementById("tabelTiket");
+const filterTicket = document.getElementById("filterTiket");
 const dataTiketKereta = [
   ["Nama Kereta", "Tujuan", "Jam Berangkat", "Harga"],
   ["Argo Bromo", "Surabaya", "06:00", 150000],
@@ -36,3 +37,48 @@ dataTiketKereta.forEach((baris, i) => {
 
   tabel.appendChild(tr);
 });
+
+function urutkanTiket() {
+  const kriteria = document.getElementById("filltertiket").value;
+
+  // Salin data tanpa header
+  const header = dataTiketKereta[0];
+  const data = dataTiketKereta.slice(1);
+
+  // Bubble Sort
+  for (let i = 0; i < data.length - 1; i++) {
+    for (let j = 0; j < data.length - i - 1; j++) {
+      const harga1 = data[j][3];
+      const harga2 = data[j + 1][3];
+
+      if (
+        (kriteria === "hargaTerendah" && harga1 > harga2) ||
+        (kriteria === "hargaTertinggi" && harga1 < harga2)
+      ) {
+        // Tukar posisi
+        const temp = data[j];
+        data[j] = data[j + 1];
+        data[j + 1] = temp;
+      }
+    }
+  }
+
+  // Kosongkan tabel
+  tabel.innerHTML = "";
+
+  // Tampilkan kembali
+  const semuaData = [header, ...data];
+  semuaData.forEach((baris, i) => {
+    const tr = document.createElement("tr");
+
+    baris.forEach((data) => {
+      const cell = document.createElement(i === 0 ? "th" : "td");
+      cell.textContent = data;
+      cell.className = "border px-4 py-2 bg-while";
+      tr.appendChild(cell);
+      tr.className = "border px-4 py-2 hover:bg-blue-100";
+    });
+
+    tabel.appendChild(tr);
+  });
+}
