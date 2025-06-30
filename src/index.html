@@ -262,55 +262,64 @@
         <p class="text-gray-600">Detail Penjualan Tiket Keseluruhan</p>
       </div>
 
-      <div class="detailTransaksi flex flex-row items-center gap-6">
+      <div class="detailTransaksi flex gap-6 justify-center mt-6">
+        <!-- Card Tiket Terjual -->
         <div
-          class="w-[286px] h-[200px] bg-red-800 rounded-3xl shadow-md p-4 gap-4"
+          class="w-72 bg-red-700 rounded-2xl shadow-lg p-5 transition hover:scale-105 duration-300"
         >
-          <div class="flex items-center gap-4 mt-2">
+          <div class="flex items-center gap-4">
             <img
               src="../assets/img/home/ic_card.svg"
               alt="Debit"
               class="w-14"
             />
-            <h1 class="text-2xl font-bold text-white">TIKET TERJUAL</h1>
+            <div>
+              <h1 class="text-lg text-white font-semibold">TIKET TERJUAL</h1>
+              <p class="text-xs text-red-200">Total transaksi hari ini</p>
+            </div>
           </div>
-
-          <div class="font-bold text-4xl text-white flex justify-center">
-            <h1 class="mt-9">1 Tiket</h1>
+          <div class="text-center mt-10">
+            <p class="text-4xl font-extrabold text-white">1 Tiket</p>
           </div>
         </div>
 
+        <!-- Card Total Pembeli -->
         <div
-          class="w-[286px] h-[200px] bg-indigo-700 rounded-3xl shadow-md p-4 gap-4"
+          class="w-72 bg-indigo-700 rounded-2xl shadow-lg p-5 transition hover:scale-105 duration-300"
         >
-          <div class="flex items-center gap-4 mt-2">
+          <div class="flex items-center gap-4">
             <img
               src="../assets/img/home/ic_card.svg"
               alt="Debit"
               class="w-14"
             />
-            <h1 class="text-2xl font-bold text-white">TOTAL PEMBELI</h1>
+            <div>
+              <h1 class="text-lg text-white font-semibold">TOTAL PEMBELI</h1>
+              <p class="text-xs text-indigo-200">Orang yang membeli tiket</p>
+            </div>
           </div>
-
-          <div class="font-bold text-4xl text-white flex justify-center">
-            <h1 class="mt-9">1 Orang</h1>
+          <div class="text-center mt-10">
+            <p class="text-4xl font-extrabold text-white">1 Orang</p>
           </div>
         </div>
 
+        <!-- Card Pendapatan -->
         <div
-          class="w-[286px] h-[200px] bg-green-800 rounded-3xl shadow-md p-4 gap-4"
+          class="w-72 bg-green-700 rounded-2xl shadow-lg p-5 transition hover:scale-105 duration-300"
         >
-          <div class="flex items-center gap-4 mt-2">
+          <div class="flex items-center gap-4">
             <img
               src="../assets/img/home/ic_card.svg"
               alt="Debit"
               class="w-14"
             />
-            <h1 class="text-2xl font-bold text-white">PENDAPATAN</h1>
+            <div>
+              <h1 class="text-lg text-white font-semibold">PENDAPATAN</h1>
+              <p class="text-xs text-green-200">Akumulasi penjualan</p>
+            </div>
           </div>
-
-          <div class="font-bold text-4xl text-white flex justify-center">
-            <h1 class="mt-9">12.545.343</h1>
+          <div class="text-center mt-10">
+            <p class="text-4xl font-extrabold text-white">Rp 12.54</p>
           </div>
         </div>
       </div>
