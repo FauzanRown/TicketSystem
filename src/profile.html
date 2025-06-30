@@ -62,7 +62,7 @@
         </a>
 
         <a
-          href="./dataPembeli.html"
+          href="#"
           class="flex items-center transition hover:bg-blue-700 text-black rounded-lg p-2 hover:text-white hover:shadow-lg"
         >
           <!-- Icon: User -->
@@ -178,7 +178,7 @@
 
       <div class="mt-6 space-y-2 px-6">
         <a
-          href="./profile.html"
+          href="#"
           class="flex items-center transition hover:bg-blue-700 text-black rounded-lg p-2 hover:text-white hover:shadow-lg"
         >
           <!-- Icon: Overview -->
@@ -256,36 +256,62 @@
           </div>
         </div>
       </nav>
+    </div>
 
-      <div class="flex items-center space-x-4 mt-9 justify-center mb-6">
-        <!-- <label for="sort" class="block mb-2 text-sm font-medium text-gray-700"
-          >Urutkan Tiket</label
-        > -->
-        <div class="w-full max-w-xs">
-          <select
-            name="sort"
-            id="filltertiket"
-            class="w-full bg-white text-black font-semibold py-2 px-4 pr-8 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-75 transition duration-150 ease-in-out"
-          >
-            <option value="">Urutkan Tiket</option>
-            <option value="hargaTerendah">Harga Terendah</option>
-            <option value="hargaTertinggi">Harga Tertinggi</option>
-          </select>
-        </div>
-        <button
-          class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-blue-600 transition duration-150 ease-in-out"
-          id="urutkanTiket"
-          onclick="urutkanTiket()"
+    <div
+      class="flex flex-col md:flex-row ml-[315px] p-6 gap-6 justify-center items-center mt-10"
+    >
+      <!-- Card 1 -->
+      <div
+        class="bg-white shadow-xl rounded-3xl overflow-hidden transition hover:shadow-2xl duration-500 max-w-sm w-full"
+      >
+        <div
+          class="bg-gradient-to-r from-indigo-600 to-purple-600 p-6 text-center"
         >
-          Urutkan
-        </button>
+          <img
+            class="w-24 h-24 rounded-full mx-auto border-4 border-white shadow-md"
+            src="../assets/img/home/user.png"
+            alt="Muhammad Fauzan Anwar"
+          />
+          <h2 class="mt-4 text-white text-xl font-bold">
+            Muhammad Fauzan Anwar
+          </h2>
+          <p class="text-indigo-100 text-sm">Developer Frontend</p>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 text-center text-sm">
+            Mahasiswa Informatika UAD yang tertarik pada UI/UX dan frontend
+            development dengan pendekatan visual yang menarik.
+          </p>
+        </div>
       </div>
 
-      <table id="tabelTiket" class="table-auto border w-full mt-6 text-left">
-        <!-- JavaScript akan isi bagian ini -->
-      </table>
+      <!-- Card 2 -->
+      <div
+        class="bg-white shadow-xl rounded-3xl overflow-hidden transition hover:shadow-2xl duration-500 max-w-sm w-full"
+      >
+        <div
+          class="bg-gradient-to-r from-teal-600 to-emerald-600 p-6 text-center"
+        >
+          <img
+            class="w-24 h-24 rounded-full mx-auto border-4 border-white shadow-md"
+            src="../assets/img/home/user.png"
+            alt="Muhammad Faizin Albahri"
+          />
+          <h2 class="mt-4 text-white text-xl font-bold">
+            Muhammad Faizin Albahri
+          </h2>
+          <p class="text-teal-100 text-sm">Developer Backend</p>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 text-center text-sm">
+            Mahasiswa Informatika UAD yang fokus pada backend logic dan
+            pengolahan data, serta tertarik pada pengembangan sistem.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 
-  <script src="../src/js/dataticket.js"></script>
+  <script src="../src/js/tiketTersedia.js"></script>
 </html>
