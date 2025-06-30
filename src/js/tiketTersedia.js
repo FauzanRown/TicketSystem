@@ -36,7 +36,7 @@ dataTiket.forEach(([kereta, tujuan, jam, harga], index) => {
       </div>
       <span class="text-xs bg-white text-indigo-600 font-semibold px-2 py-1 rounded-full">Ticket</span>
     </div>
-    
+
     <div class="space-y-2 text-sm">
       <div class="flex justify-between">
         <span class="text-gray-500">Tujuan</span>
@@ -52,7 +52,7 @@ dataTiket.forEach(([kereta, tujuan, jam, harga], index) => {
       </div>
     </div>
     <div class="bg-gray-100 text-center mt-3 p-2 text-xs text-gray-600 rounded">
-      Tunjukkan tiket ini saat masuk ke stasiun
+      Ticket Ini Masih Tersedia
     </div>
   `;
 
