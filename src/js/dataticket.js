@@ -82,3 +82,39 @@ function urutkanTiket() {
     tabel.appendChild(tr);
   });
 }
+
+function cariTiket() {
+  const input = document.querySelector(".search").value.toLowerCase();
+  const header = dataTiketKereta[0];
+  const data = dataTiketKereta.slice(1);
+
+  const hasil = data.filter((row) => {
+    return row.some((item) => item.toString().toLowerCase().includes(input));
+  });
+
+  // Tampilkan hasil
+  tabel.innerHTML = "";
+
+  const semuaData = [header, ...hasil];
+  semuaData.forEach((baris, i) => {
+    const tr = document.createElement("tr");
+
+    baris.forEach((data) => {
+      const cell = document.createElement(i === 0 ? "th" : "td");
+      cell.textContent = data;
+      cell.className = "border px-4 py-2 bg-while";
+      tr.appendChild(cell);
+      tr.className = "border px-4 py-2 hover:bg-blue-100";
+    });
+
+    tabel.appendChild(tr);
+  });
+}
+
+document.querySelector(".btn-search").addEventListener("click", cariTiket);
+
+document.querySelector(".search").addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    cariTiket();
+  }
+});
